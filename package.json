@@ -18,10 +18,12 @@
   "files": ["dist", "src"],
   "exports": {
     ".": {
-      "import": "./dist/index.js"
+      "import": "./dist/index.js",
+      "types": "./dist/index.d.ts"
     },
     "./Renderable": {
-      "import": "./dist/renderable/Renderable.js"
+      "import": "./dist/renderable/Renderable.js",
+      "types": "./dist/renderable/Renderable.d.ts"
     }
   }
 }
