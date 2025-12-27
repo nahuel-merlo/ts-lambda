@@ -4,7 +4,7 @@
 type Maybe<A> = Nothing | Just<A>;
 
 interface Nothing {
-    readonly _tag: "Nothing"
+    readonly _tag: "Nothing",
 }
 
 interface Just<A> {
