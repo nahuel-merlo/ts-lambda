@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "Functional types and patterns for TypeScript inspired by Haskell and pure functional programming",
   "main": "dist/index.js",
-  "types": "dist/index.d.ts",
+  "types": "module",
   "scripts": {
     "build": "tsc",
     "test": "echo \"Error: no test specified\" && exit 1"
