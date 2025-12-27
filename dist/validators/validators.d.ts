@@ -1,5 +1,5 @@
-import type { Either } from "../either/Either";
-import { Maybe } from "../maybe/Maybe";
+import type { Either } from "../either/Either.ts";
+import { Maybe } from "../maybe/Maybe.js";
 type Validator<T> = (input: unknown) => Either<Error, T>;
 declare const stringValidator: Validator<string>;
 declare const numberValidator: Validator<number>;

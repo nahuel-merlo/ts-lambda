@@ -1,4 +1,4 @@
-import filterMap from "../mapping/filterMap";
+import filterMap from "../mapping/filterMap.js";
 
 /**
  * Either: represents values ​​that can have two behaviors (Left being the special behavior and Right the expected one)

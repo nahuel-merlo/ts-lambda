@@ -1,6 +1,6 @@
-import * as e from "../either/Either";
-import type { Either } from "../either/Either";
-import { just, Maybe, nothing } from "../maybe/Maybe";
+import * as e from "../either/Either.js";
+import type { Either } from "../either/Either.ts";
+import { just, Maybe, nothing } from "../maybe/Maybe.js";
 
 type Validator<T> = (input: unknown) => Either<Error, T>;
 

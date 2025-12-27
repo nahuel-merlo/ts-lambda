@@ -1,5 +1,5 @@
-import type { Either, Left, Right } from "../either/Either";
-import type { Maybe, Nothing, Just } from "../maybe/Maybe";
+import type { Either, Left, Right } from "../either/Either.ts";
+import type { Maybe, Nothing, Just } from "../maybe/Maybe.ts";
 /**
  * Renderable represents a value that has two behaviors (like Either) but also has a neutral value (like Maybe)
  * This type was designed with the idea of ​​representing states

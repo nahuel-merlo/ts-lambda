@@ -2,28 +2,41 @@
   "name": "ts-lambda",
   "version": "1.0.0",
   "description": "Functional types and patterns for TypeScript inspired by Haskell and pure functional programming",
-  "main": "dist/index.js",
-  "types": "module",
-  "scripts": {
-    "build": "tsc",
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "keywords": ["typescript", "functional", "haskell", "maybe", "either", "monad", "fp"],
-  "author": "nahuepera5",
-  "license": "ISC",
-  "type": "commonjs",
-  "devDependencies": {
-    "typescript": "^5.9.3"
-  },
-  "files": ["dist", "src"],
+  "type": "module",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
   "exports": {
     ".": {
       "import": "./dist/index.js",
       "types": "./dist/index.d.ts"
     },
+    "./compose": {
+      "import": "./dist/combinators/compose.js",
+      "types": "./dist/combinators/compose.d.ts"
+    },
+    "./Maybe": {
+      "import": "./dist/maybe/Maybe.js",
+      "types": "./dist/maybe/Maybe.d.ts"
+    },
+    "./Either": {
+      "import": "./dist/either/Either.js",
+      "types": "./dist/either/Either.d.ts"
+    },
     "./Renderable": {
       "import": "./dist/renderable/Renderable.js",
       "types": "./dist/renderable/Renderable.d.ts"
+    },
+    "./validator": {
+      "import": "./dist/validators/validators.js",
+      "types": "./dist/validators/validators.d.ts"
     }
-  }
+  },
+  "files": ["dist"],
+  "scripts": {
+    "build": "tsc"
+  },
+  "devDependencies": {
+    "typescript": "^5.9.3"
+  },
+  "license": "ISC"
 }
