@@ -1,6 +1,6 @@
-import * as c from "./combinators/compose.js";
-import * as m from "./maybe/Maybe.js";
-import * as e from "./either/Either.js";
-import * as r from "./renderable/Renderable.js";
-import * as v from "./validators/validators.js";
-export { c, m, e, r, v };
+export * from "./combinators/compose.js";
+export * from "./validators/validators.js";
+import * as M from "./maybe/Maybe.js";
+import * as E from "./either/Either.js";
+import * as R from "./renderable/Renderable.js";
+export { M, E, R };
